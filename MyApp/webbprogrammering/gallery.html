@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quizmani</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush&display=swap" rel="stylesheet">
+
+    <style>
+        /* Ange border-box för div element för att inkludera border */
+        div {
+            box-sizing: border-box
+        }
+
+        /* Egenskaper för div-element med class gallery */
+        div.gallery {
+            background-color: rgb(50, 50, 50)
+        }
+
+        /* Egenskaper för respektive item */
+        figure.item {
+            width: 25%;
+            /* Om 4 bilder ska visas */
+            border: 1px solid black;
+            background-color: rgb(225, 225, 225);
+            margin: 0
+        }
+
+        /* Storlek på bilden */
+        figure.item img {
+            width: 100%
+        }
+
+        /* Bildtexten som visas under bilden */
+        figure.item figcaption {
+            padding: 10px
+        }
+
+        /* Visuell effekt som visas när man pekar på en bild */
+        figure.item img:hover {
+            opacity: 0.7
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Toppbild - huvudrubrik -->
+
+        <h1 style="font-size: 120px">
+            <a href="index.html">QUIZMANI</a>
+        </h1>
+
+    </header>
+
+    <nav>
+        <!-- Toppmeny - navigation till olika sidor -->
+
+        <ul>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li>|</li>
+            <li><a href="quiz_create.html">Skapa quiz</a></li>
+            <li>|</li>
+            <li><a href="quiz_all.html">Alla quiz</a></li>
+            <li>|</li>
+            <li><a href="highscore.html">Highscore</a></li>
+            <li>|</li>
+            <li><a style="color: lightyellow" href="gallery.html">Galleri</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="page" class="container">
+
+
+        <main>
+            <!-- Main - Galleri med bilder -->
+
+            <h1>Galleri</h1>
+
+            <!-- Div-element för ett galleri -->
+            <div class="gallery container">
+
+                <!-- Figure element 1 för bild och bildtext -->
+                <figure class="item">
+
+                    <!-- Bild -->
+                    <img src="images/quiz_ex1.PNG" alt="Ex 1">
+
+                    <!-- Bildtext -->
+                    <figcaption>
+                        Exempel 1
+                    </figcaption>
+
+                </figure>
+
+                <!-- Figure element 2 för bild och bildtext -->
+                <figure class="item">
+
+                    <!-- Bild -->
+                    <img src="images/quiz_ex2.PNG" alt="Ex 2">
+
+                    <!-- Bildtext -->
+                    <figcaption>
+                        Exempel 2
+                    </figcaption>
+
+                </figure>
+
+                <!-- Figure element 3 för bild och bildtext -->
+                <figure class="item">
+
+                    <!-- Bild -->
+                    <img src="images/quiz_ex3.PNG" alt="Ex 3">
+
+                    <!-- Bildtext -->
+                    <figcaption>
+                        Exempel 3
+                    </figcaption>
+
+                </figure>
+
+                <!-- Figure element 4 för bild och bildtext -->
+                <figure class="item">
+
+                    <!-- Bild -->
+                    <img src="images/quiz_ex4.PNG" alt="Ex 4">
+
+                    <!-- Bildtext -->
+                    <figcaption>
+                        Exempel 4
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+        </main>
+
+        <aside>
+                <!-- Aside -->
+    
+                <h4 style="margin-top: 6em" class="aside aside_gallery">
+                    Exempelbilder på att skapa quiz</h4>
+    
+            </aside>
+    
+    </div>
+
+    <div id="foot" class="container">
+
+        <footer>
+            <!-- Sidfot -->
+
+            <p>
+                Ingela Eklöw<br>
+                Distanskursen Programmering
+            </p>
+
+            <img src="images/logo_glimakra.png" alt="Logo Glimåkra Folkhögskola">
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

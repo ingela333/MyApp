@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quizmani</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+    <style>
+        form p input#header {
+            background-color: aquamarine;
+            width: 600px;
+        }
+
+        form p input#header2 {
+            background-color: lightblue;
+            margin: 10px 0 0 30px;
+            width: 570px;
+        }
+
+        form p input#question {
+            margin: 20px 0 0 10px;
+            width: 560px;
+        }
+
+        form p div input#question {
+            margin: 20px 0 0 10px;
+            float: left;
+            width: 560px;
+        }
+
+        form p input#answer {
+            margin: 0 0 10px 20px;
+            float: left;
+            width: 50px;
+        }
+
+        form p div input#answer {
+            margin: 0 0 10px 20px;
+            float: left;
+            width: 50px;
+        }
+
+        div {
+            /* box-sizing: border-box; */
+            margin: 0 0 0 10px;
+            float: left;
+            width: 50px
+        }
+
+        p:after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- Toppbild - huvudrubrik -->
+
+        <h1>
+            <a href="index.html">Quizmani</a>
+        </h1>
+
+    </header>
+
+    <nav>
+        <!-- Toppmeny - navigation till olika sidor -->
+
+        <ul>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li>|</li>
+            <li><a href="quiz_create.html">Skapa quiz</a></li>
+            <li>|</li>
+            <li><a href="highscore.html">Highscore</a></li>
+            <li>|</li>
+            <li><a href="gallery.html">Galleri</a></li>
+        </ul>
+
+    </nav>
+
+    <div id="page" class="container">
+
+        <aside>
+            <!-- Aside -->
+
+        </aside>
+
+        <main>
+            <!-- Main -->
+
+            <h1>
+                Skapa ditt eget quiz!
+            </h1>
+
+            <!-- Form -->
+            <form action="" method="POST">
+
+                <!-- Headers -->
+
+                <p>
+                    <input type="text" id="header" name="header1"
+                        placeholder="Fyll i en rubrik (en fråga) på ditt eget quiz" required minlength="4"
+                        maxlength="256"><br>
+
+                    <input type="text" id="header2" name="header2" placeholder="Fyll i en underrubrik (frivilligt)"
+                        required minlength="4" maxlength="256">
+                </p>
+
+                <!-- Question 1 -->
+
+                <p>
+                    <div>
+                        <label for="text" id="label_question">1.</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="question" name="question1" placeholder="Fyll i en fråga" required
+                            minlength="4" maxlength="256">
+                    </div>
+
+                    <div>
+                    </div>
+                </p>
+
+                <!-- Answers to question 1 -->
+
+                <p>
+                    <div>
+                        <label for="text" id="label_answer">a.</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="answer" name="answer1_1" placeholder="Fyll i ett svar" required
+                            minlength="1" maxlength="256"><br>
+                    </div>
+                </p>
+
+                <p>
+                    <div>
+                        <label for="text" id="label_answer">b.</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="answer" name="answer1_2" placeholder="Fyll i ett svar" required
+                            minlength="1" maxlength="256"><br>
+                    </div>
+                </p>
+
+                <p>
+                    <div>
+                        <label for="text" id="label_answer">c.</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="answer" name="answer1_3" placeholder="Fyll i ett svar" required
+                            minlength="1" maxlength="256">
+                    </div>
+                </p>
+                </p>
+
+                <!-- Question 2 -->
+
+                <p>
+                    <label for="text">2.</label>
+                    <input type="text" id="question" name="question2" placeholder="Fyll i en fråga" required
+                        minlength="4" maxlength="256">
+                </p>
+
+                <!-- Answers to question 2 -->
+
+                <p>
+                    <label for="text">a.</label>
+                    <input type="text" id="answer" name="answer2_1" placeholder="Fyll i ett svar" required minlength="1"
+                        maxlength="256"><br>
+
+                    <label for="text">b.</label>
+                    <input type="text" id="answer" name="answer2_2" placeholder="Fyll i ett svar" required minlength="1"
+                        maxlength="256"><br>
+
+                    <label for="text">c.</label>
+                    <input type="text" id="answer" name="answer2_3" placeholder="Fyll i ett svar" required minlength="1"
+                        maxlength="256">
+                </p>
+
+                <!-- Question 3 -->
+
+                <p>
+                    <label for="text">3.</label>
+                    <input type="text" id="question" name="question3" placeholder="Fyll i en fråga" required
+                        minlength="4" maxlength="256">
+                </p>
+
+                <!-- Answers to question 3 -->
+
+                <p>
+                    <label for="text">a.</label>
+                    <input type="text" id="answer" name="answer3_1" placeholder="Fyll i ett svar" required minlength="1"
+                        maxlength="256"><br>
+
+                    <label for="text">b.</label>
+                    <input type="text" id="answer" name="answer3_2" placeholder="Fyll i ett svar" required minlength="1"
+                        maxlength="256"><br>
+
+                    <label for="text">c.</label>
+                    <input type="text" id="answer" name="answer3_3" placeholder="Fyll i ett svar" required minlength="1"
+                        maxlength="256">
+                </p>
+
+                <!-- Category -->
+
+                <p>
+                    <select name="category" id="category">
+                        <option value="cat"> - Välj kategori - </option>
+                        <option value="cat1">Personligt</option>
+                        <option value="cat2">Underhållning</option>
+                        <option value="cat3">Naturvetenskap</option>
+                        <option value="cat4">Samhälle</option>
+                        <option value="cat5">Humor</option>
+                        <option value="cat6">Övrigt</option>
+                    </select>
+                </p>
+
+                <!-- Test result -->
+
+                <p>
+                    <div>
+                        <label for="text" id="label_result">0-33%</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="result" name="result1" placeholder="Fyll i testresultat" required
+                            minlength="1" maxlength="256">
+                    </div>
+                </p>
+
+                <p>
+                    <div>
+                        <label for="text" id="label_result">34-67%</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="result" name="result2" placeholder="Fyll i testresultat" required
+                            minlength="1" maxlength="256"><br>
+                    </div>
+                </p>
+
+                <p>
+                    <div>
+                        <label for="text" id="label_result">68-100%</label>
+                    </div>
+
+                    <div>
+                        <input type="text" id="result" name="result3" placeholder="Fyll i testresultat" required
+                            minlength="1" maxlength="256">
+                    </div>
+                </p>
+
+                <!-- Submit -->
+
+                <input type="submit" value="Klar!">
+
+                <p></p>
+
+            </form>
+
+
+        </main>
+
+    </div>
+
+    <div id="foot" class="container">
+
+        <footer>
+            <!-- Sidfot -->
+
+            <p>
+                Ingela Eklöw<br>
+                Distanskursen Programmering
+            </p>
+
+            <img src="images/logo_glimakra.png" alt="Logo Glimåkra Folkhögskola">
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
